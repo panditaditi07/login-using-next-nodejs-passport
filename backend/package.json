@@ -1,0 +1,14 @@
+{
+  "name": "login-page",
+  "version": "1.0.0",
+  "description": "It contains the user login and sign up authentication using passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
