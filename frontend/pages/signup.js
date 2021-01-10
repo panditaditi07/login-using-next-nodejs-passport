@@ -12,7 +12,12 @@ export default function SignUp() {
 
       <div className={styles["main-container"]}></div>
       <div>
-        <img src="" width="120" height="80" className={styles["heading"]} />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17ObWhBUWrHMaMeq6hmjRiCU6kIlgYaVu-A&usqp=CAU"
+          width="120"
+          height="90"
+          className={styles["heading"]}
+        />
         <h3 className={styles["heading"]}>Please Sign Up</h3>
       </div>
 
@@ -25,7 +30,7 @@ export default function SignUp() {
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your name"
+            placeholder="John Doe"
           />
           <br></br>
           <label htmlFor="email">Email</label>
@@ -35,7 +40,7 @@ export default function SignUp() {
             type="text"
             id="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="someone@example.com"
           />
           <br></br>
           <label htmlFor="password">Password </label>
@@ -45,13 +50,13 @@ export default function SignUp() {
             type="password"
             id="pwd"
             name="pwd"
-            placeholder="Enter your password"
+            placeholder="enter minimum 8 characters"
           />
           <br></br>
           <button className={styles["signin-button"]} type="submit">
             Create Account
           </button>
-       <br><br/>
+          <br></br>
           Already have a account?{" "}
           <Link href="/login">
             <a className={styles["signin"]}>Sign in</a>

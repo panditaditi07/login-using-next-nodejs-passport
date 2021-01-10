@@ -1,5 +1,5 @@
 .main-container {
-  margin: 150px auto;
+  margin: 110px auto;
 }
 .heading {
   margin-left: 90vh;
@@ -39,4 +39,5 @@
 }
 .signin {
   color: blue;
+  padding: 10px;
 }

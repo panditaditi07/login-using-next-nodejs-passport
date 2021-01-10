@@ -56,9 +56,10 @@ export default function Login() {
           >
             Login
           </button>
+          <br />
           Not have a account?
           <Link href="/signup">
-            <a className={styles["signup"]}>Sign in</a>
+            <a className={styles["signup"]}>Sign up</a>
           </Link>
         </form>
       </div>
