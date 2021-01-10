@@ -31,25 +31,23 @@ const SignUp = (req, res) => {
     }
   });
 };
-// const passwordMatch = () => {
-//   User.find({ email: req.body.email }, (err, data) => {
-//     if (err) {
-//       throw err;
-//     }
-//     User.comparePassword({ password: req.body.password }, (err, data) => {
-//       if (err) {
-//         throw err;
-//       }
-//       if (isMatch) {
-//         res.send(200).json({
-//           status: "Password Matched",
-//         });
-//       } else {
-//         res.send("Password did not match");
-//       }
-//     });
-//   });
-// };
+
+const login = (req, res) => {
+  User.find(
+    { email: req.body.email, password: req.body.password },
+    (err, data) => {
+      if (data.length) {
+        res.status(500).json({
+          status: "Successfully login in",
+        });
+      } else {
+        res.send("Incorrect email or password");
+      }
+    }
+  );
+};
+
 module.exports.SignUp = SignUp;
 module.exports.EmailUnique = EmailUnique;
+module.exports.login = login;
 // module.exports.passwordMatch = passwordMatch;

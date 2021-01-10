@@ -2,7 +2,7 @@
   margin: 150px auto;
 }
 .heading {
-  margin-left: 100vh;
+  margin-left: 90vh;
   color: blue;
 }
 .login {
@@ -35,4 +35,8 @@
   background-color: blue;
   border: blue;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+.signup {
+  color: blue;
 }
